@@ -29,6 +29,10 @@ details {
   /* border-bottom: 1px solid black; */;
 }
 
+details > * {
+  @apply transition-all duration-300;
+}
+
 details > p {
   @apply pb-[1.6rem];
 }
