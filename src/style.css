@@ -24,15 +24,15 @@
     @apply transition-all duration-300;
   }
   details > p {
-    @apply text-[1.2rem] leading-tight text-dark-grayish-blue pb-[1.6rem];
+    @apply pb-[1.6rem] text-[1.2rem] leading-tight text-dark-grayish-blue;
   }
 
   details > summary {
-    @apply font-normal text-[1.3rem] leading-tight text-very-dark-desaturated-blue cursor-pointer py-[2rem];
+    @apply cursor-pointer py-[2rem] text-[1.3rem] font-normal leading-tight text-very-dark-desaturated-blue;
     @apply lg:text-[1.4rem];
-    @apply flex items-center justify-between list-none;
+    @apply flex list-none items-center justify-between;
     @apply hover:text-soft-red;
-    @apply after:w-4 after:h-[.8rem] after:bg-arrow after:bg-right after:bg-no-repeat;
+    @apply after:h-[.8rem] after:w-4 after:bg-arrow after:bg-right after:bg-no-repeat;
   }
   details[open] > summary {
     @apply font-bold;
@@ -42,7 +42,7 @@
 
 @layer components {
   .section {
-    @apply w-full lg:w-1/2 h-full;
+    @apply h-full w-full lg:w-1/2;
   }
 
   .image-section {
