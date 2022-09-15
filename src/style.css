@@ -53,6 +53,3 @@
     @apply lg:pt-[6.5rem] lg:pr-[9.5rem] lg:pb-[8.3rem];
   }
 }
-
-@layer utilities {
-}
