@@ -29,6 +29,9 @@ module.exports = {
       backgroundImage: {
         'pattern-desktop': "url('./images/bg-pattern-desktop.svg')",
         'pattern-mobile': "url('./images/bg-pattern-mobile.svg')",
+        'woman-mobile': "url('./images/illustration-woman-online-mobile.svg')",
+        'woman-desktop': "url('./images/illustration-woman-online-desktop.svg')",
+        'arrow': "url('./images/icon-arrow-down.svg')",
       },
       boxShadow: {
         'main': "0px 50px 50px -20px rgba(53, 18, 122, 0.497159)",

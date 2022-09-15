@@ -13,54 +13,46 @@
   -webkit-text-size-adjust: 100%;
 }
 
-html {
-  @apply text-base;
+@layer base {
+  html {
+    @apply text-base;
+  }
+  details {
+    @apply border-b border-light-grayish-blue;
+  }
+  details > * {
+    @apply transition-all duration-300;
+  }
+  details > p {
+    @apply text-[1.2rem] leading-tight text-dark-grayish-blue pb-[1.6rem];
+  }
+
+  details > summary {
+    @apply font-normal text-[1.3rem] leading-tight text-very-dark-desaturated-blue cursor-pointer py-[2rem];
+    @apply lg:text-[1.4rem];
+    @apply flex items-center justify-between list-none;
+    @apply hover:text-soft-red;
+    @apply after:w-4 after:h-[.8rem] after:bg-arrow after:bg-right after:bg-no-repeat;
+  }
+  details[open] > summary {
+    @apply font-bold;
+    @apply after:rotate-180;
+  }
 }
 
-a {
-  @apply font-medium text-[#646cff];
-}
-a:hover {
-  @apply text-[#535bf2];
-}
+@layer components {
+  .section {
+    @apply w-full lg:w-1/2 h-full;
+  }
 
-details {
-  @apply border-b border-light-grayish-blue
-  /* border-bottom: 1px solid black; */;
-}
+  .image-section {
+    @apply lg:pt-[7rem] lg:pr-[8.7rem] lg:pb-[8rem];
+  }
 
-details > * {
-  @apply transition-all duration-300;
+  .content-section {
+    @apply lg:pt-[6.5rem] lg:pr-[9.5rem] lg:pb-[8.3rem];
+  }
 }
 
-details > p {
-  @apply pb-[1.6rem];
-}
-
-details > summary {
-  @apply font-normal text-[1.3rem] leading-tight text-very-dark-desaturated-blue cursor-pointer py-[2rem];
-  @apply flex items-center justify-between list-none;
-  /* display: list-item; */
-  /* list-style: none; */
-
-  /* background: url('./images/icon-arrow-down.svg') no-repeat right; */
-  /* @apply font-medium text-[#646cff]; */
-}
-
-details > summary > svg {
-  display: inline-block;
-  margin-left: auto;
-}
-
-details[open] > summary {
-  @apply font-bold;
-  /* display: list-item; */
-  /* list-style: none; */
-  /* background: url('./images/icon-arrow-down.svg') no-repeat right; */
-  /* transform: rotate(90deg); */
-  /* @apply font-medium text-[#646cff]; */
-}
-
-details[open] > summary > svg {
-  transform: rotate(180deg);
+@layer utilities {
 }

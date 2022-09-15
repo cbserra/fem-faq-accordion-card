@@ -6,14 +6,14 @@ export default defineConfig({
   },
   build: {
     outDir: "../public",
-    rollupOptions: {
-      input: {
-        main: './index.html',
-        'grid-test': './grid-test.html',
-        // ...
-        // List all files you want in your build
-      }
-    }
+    // rollupOptions: {
+    //   input: {
+    //     main: './src/index.html',
+    //     'grid-test': './src/grid-test.html',
+    //     // ...
+    //     // List all files you want in your build
+    //   }
+    // }
   },
   root: "src",
 });
